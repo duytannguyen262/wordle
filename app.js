@@ -5,7 +5,7 @@ const messageDisplay = document.querySelector(".message-container");
 let wordle;
 
 const getWordle = () => {
-  fetch("http://wordle-duytan.herokuapp.com/word")
+  fetch("http://wordle-server-duy.herokuapp.com/word")
     .then((response) => response.json())
     .then((data) => {
       wordle = data[0];
