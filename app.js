@@ -5,9 +5,8 @@ const messageDisplay = document.querySelector(".message-container");
 let wordle;
 
 const getWordle = () => {
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-  const apiUrl = "https://wordle-server-duy.herokuapp.com/word";
-  fetch(proxyUrl + apiUrl)
+  const apiUrl = "http://wordle-server-duy.herokuapp.com/word";
+  fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
       wordle = data[0];
