@@ -5,7 +5,7 @@ const messageDisplay = document.querySelector(".message-container");
 let wordle;
 
 const getWordle = () => {
-  const apiUrl = "http://wordle-server-duy.herokuapp.com/word";
+  const apiUrl = "https://wordle-server-duy.herokuapp.com/word";
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
