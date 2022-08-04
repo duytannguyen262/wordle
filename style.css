@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #191a2e;
+  color: #6272a4;
+}
+
+.title-container {
+  color: #ec407b;
+  text-align: center;
+  width: 50rem;
+  padding-top: 3rem;
+  border-bottom: 1px solid #6272a4;
+}
+
+.game-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tile-container {
+  width: 50rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.tile-container div {
+  display: flex;
+  justify-content: center;
+}
+.tile-container div div {
+  color: #fff !important;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.tile-container .tile {
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid #6272a4;
+  color: #6272a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key-container {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.key-container button {
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid #6272a4;
+  background: #191a2e;
+  color: #6272a4;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.key-container button:hover {
+  background: #6272a4;
+  color: #191a2e;
+}
+.key-container button:active {
+  background: #191a2e;
+  color: #6272a4;
+}
+.key-container button:nth-child(20), .key-container button:nth-child(28) {
+  width: 7rem;
+}
+
+.message-container p {
+  font-size: 1.8rem;
+  color: #ec407b;
+  font-weight: 600;
+  padding: 1rem 2rem;
+}
+
+.tile-flip {
+  -webkit-animation: 0.5s linear flipping;
+          animation: 0.5s linear flipping;
+}
+
+@-webkit-keyframes flipping {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes flipping {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+.cyan {
+  background-color: #4cffd7 !important;
+  color: #fff !important;
+}
+
+.orange {
+  background-color: #ffc57a !important;
+  color: #fff !important;
+}
+
+.gray {
+  background-color: rgba(98, 114, 164, 0.8) !important;
+  color: #fff !important;
+}/*# sourceMappingURL=style.css.map */
